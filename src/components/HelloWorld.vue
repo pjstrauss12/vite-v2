@@ -40,7 +40,7 @@ export default {
       });
     },
      duplicator(){
-      let d = document.querySelector('div');
+      let d = document.querySelector('.fullcard');
       let cloneNode = d.cloneNode(true);
       document.body.appendChild(cloneNode);
       console.log(cloneNode);
@@ -56,7 +56,7 @@ export default {
     },
 
      deleter(){
-      let d = document.querySelectorAll('div');
+      let d = document.querySelectorAll('.fullcard');
       var last = d[d.length- 1];
       if (d.length != 1){
       last.remove();
