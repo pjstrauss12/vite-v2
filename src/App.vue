@@ -11,125 +11,81 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.fullcard {
+  border: 5px solid;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  color: white;
+  margin: 12px;
 
-.card{
-  border-radius: 24px;
-  border: 3px solid #041E42;
-  padding: 8px;
-  width: 400px;
-  display: block;
+  background-color: black;
+  padding: 16px;
+}
+p{
+  display: none;
+}
+img {
+  max-width: 75%;
+  max-height: 75%;
   margin: auto;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 8px 24px #999;
-  background-color: lightgrey;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  padding: 16px, 16px;
 }
-
-.textbox{
-  font-size: 15px;
-  margin-left: 112px;
-  text-align: right;
-  border-radius: 24px;
+button{
+  padding: 8px 8px;
+  color: blue;
+  background-color: orange;
+  text-transform: uppercase;
+  display: none;
+  margin: 8px;
 }
-
-.description{
-  text-shadow: -1px 1px 2px #FFFFFF,
-				  1px 1px 2px #FFFFFF,
-				  1px -1px 0 #FFFFFF,
-				  -1px -1px 0 #FFFFFF;
+.details{
+  padding: 8px 8px;
+  color: blue;
+  background-color: orange;
+  text-transform: uppercase;
+  display: none;
+  margin: 8px;
 }
-
-.haxbtn{
-  display:inline-block;
-  text-align: center;
+.add {
+  padding: 8px 8px;
   color: white;
-  background-color: #041E42;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 120px;
-  height: 32px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  visibility: visible;
-  padding-top: 10px;
-  margin-right: 32px;
+  background-color: red;
+  text-transform: uppercase;
+  margin: 8px;
 }
 
-.haxbtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+.add:hover {
+  background-color: green;
+  color: yellow;
 }
 
-.haxbtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
+.hoverclass{
+  background-color: green;
+  color: yellow;
 }
 
-.title{
-  color: white;
-  font-size: 24px;
-  text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+.add:focus{
+  background-color: green;
+  color: yellow;
 }
 
-.giaImg{
-  width: 200px;
-  border-radius: 24px;
-  box-shadow: 0px 10px 24px #999;
-  float: left;
+.toggle{
+  background-color: blue;
+  color: orange;
 }
 
-.outsideBtn{
-  color: white;
-  background-color: #041E42;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 120px;
-  height: 50px;
-  box-shadow: 0px 10px 24px #999;
-  border: 1px solid #041E42;
-  margin-right: 32px;
-  margin-bottom: 16px;
-  display: inline-block;
+@media screen and (min-width: 500px) and (max-width: 800px){
+  button{
+    display: inline-block;
+  }
+  .details{
+    display: inline-block;
+  }
 }
-
-.outsideBtn:hover{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.outsideBtn:focus{
-  color: #e0e0e0;
-  background-color: #07377a;
-  box-shadow: 0px 10px 24px white;
-  border: 1px solid #07377a;
-}
-
-.basic{
-  background-color: hotpink;
-}
-
-.hoverCard{
-  border: 3px solid purple;
-  box-shadow: 0px 8px 24px yellow;
+@media (max-width: 500px) {
+  div{
+    font-size: 10px;
+  }
 }
 
 input:checked + label + .description { display:none; }
